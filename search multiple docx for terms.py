@@ -3,6 +3,7 @@ from pathlib import Path
 import os, sys
 from docx import *
 import docx2txt
+from collections import Counter
 
 folder = r'C:\Users\chris\Documents\Transgola\Clients\PROJECTS\2020\375091020_TM_JTI\Translation\MY COPY\Perfectit\Final\Splits'
 
@@ -38,4 +39,6 @@ fnt = dict(zip(newFileNames, text))
 for s in search:
     for k, v in fnt.items():
         if s in v:
-            print(k + '   ------>   ' +  s)
+            counts = v.count(s)
+            print( "\n")
+            print(k  + '   ------>   ' +  s + '   ------>   ' +  str(counts) + ' instances')
