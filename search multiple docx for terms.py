@@ -41,4 +41,4 @@ for s in search:
         if s in v:
             counts = v.count(s)
             print( "\n")
-            print(k  + '   ------>   ' +  s + '   ------>   ' +  str(counts) + ' instances')
+            print(k  + '   ------>   ' +  s + '   ------>   ' +  str(counts))
