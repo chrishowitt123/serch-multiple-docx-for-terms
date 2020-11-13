@@ -159,4 +159,4 @@ else:
             print( "\n")
             print(f'{Path(filename).name} m \t---> {rep_mat_statment}')  
             print( "\n")
-            print("Your DOCX_RepStrings reports were successfully created!")
+            print("Your DOCX_RepStrings report was successfully created!")
