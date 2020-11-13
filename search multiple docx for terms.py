@@ -13,6 +13,7 @@ import docx2txt
 from nltk.tokenize import PunktSentenceTokenizer
 from nltk.tokenize import RegexpTokenizer
 import glob
+from pathlib import Path    
 
 
 print( "\n")  
@@ -150,15 +151,12 @@ else:
             results['%'] = pd.Series(rep_mat_statment)
             
             
-            
-            
             os.path.dirname(os.path.abspath(filename))
             results.to_excel(filename + '_DOCX_RepStrings.xlsx')
                 
             print("Results!")
             print( "\n")
-            print(results[['String', 'No. of instances']])
             print( "\n")
-            print(rep_mat_statment)  
+            print(f'{Path(filename).name} m \t---> {rep_mat_statment}')  
             print( "\n")
-            print("Your DOCX_RepStrings report was successfully created!")
+            print("Your DOCX_RepStrings reports were successfully created!")
